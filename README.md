@@ -1,38 +1,26 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
-
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
-
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Clone the repository**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+2.  **Install gatsby-cli globally `npm install -g gatsby-cli`**
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+3.  **CD to the cloned repo root folder**
 
-1.  **Start developing.**
+4.  **Run `npm install`**
 
-    Navigate into your new site’s directory and start it up.
+5.  **Create `.env.development` file in the root of the folder**
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+    Create these env variables:
 
-1.  **Open the source code and start editing!**
+    `GATSBY_BASE_URL="your headless WP local URL (without protocol)"`
+    e.g. "headlesswp.local"
+    `GATSBY_PROTOCOL="http"`
+    `GATSBY_SOURCE_URL="your headless WP local URL with protocol"`
+    e.g. "http://headlesswp.local"
+
+6.  **Make sure that your headless WP is running**
+
+7.  **Run `gatsby develop`**
 
     Your site is now running at `http://localhost:8000`!
 
@@ -95,5 +83,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
