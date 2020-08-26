@@ -6,11 +6,11 @@
  */
 
 import React from 'react';
-import CSSReset from '../../globalStyles/Reset';
-import GlobalStyles from '../../globalStyles/GlobalStyles';
+import CSSReset from '../../styles/global/Reset';
+import GlobalStyles from '../../styles/global/GlobalStyles';
 
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from './header/Header';
+import Footer from './footer/Footer';
 
 import styled from 'styled-components';
 

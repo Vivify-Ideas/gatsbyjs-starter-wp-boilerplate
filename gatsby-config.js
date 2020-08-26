@@ -1,6 +1,6 @@
 // Initialize dotenv
 require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`, // or '.env'
+  path: `.env.${process.env.NODE_ENV}` // or '.env'
 });
 
 // And then you can use the config in gatsby-config.js
@@ -10,7 +10,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@gatsbyjs`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,8 +18,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        path: `${__dirname}/src/assets/images`
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -29,8 +29,8 @@ module.exports = {
       options: {
         displayName: true,
         fileName: true,
-        pure: true,
-      },
+        pure: true
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,
@@ -41,8 +41,8 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/assets/images/gatsby-icon.png` // This path is relative to the root of the site.
+      }
     },
     {
       resolve: 'gatsby-source-wordpress',
@@ -99,7 +99,7 @@ module.exports = {
           // plugin, you can specify user and password to obtain access token and use authenticated requests against WordPress REST API.
           jwt_user: process.env.JWT_USER,
           jwt_pass: process.env.JWT_PASSWORD,
-          jwt_base_path: '/jwt-auth/v1/token', // Default - can skip if you are using https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/
+          jwt_base_path: '/jwt-auth/v1/token' // Default - can skip if you are using https://wordpress.org/plugins/jwt-authentication-for-wp-rest-api/
         },
         // Set cookies that should be send with requests to WordPress as key value pairs
         cookies: {},
@@ -111,7 +111,7 @@ module.exports = {
         // Search and Replace Urls across WordPress content.
         searchAndReplaceContentUrls: {
           sourceUrl: process.env.GATSBY_SOURCE_URL,
-          replacementUrl: '',
+          replacementUrl: ''
         },
         // Set how many simultaneous requests are sent at once.
         concurrentRequests: 10,
@@ -132,7 +132,7 @@ module.exports = {
           '**/tags',
           '**/taxonomies',
           '**/users',
-          '**/menus',
+          '**/menus'
         ],
         // Blacklisted routes using glob patterns
         excludedRoutes: [],
@@ -161,10 +161,10 @@ module.exports = {
             normalizer: function ({ entities }) {
               // manipulate entities here
               return entities;
-            },
-          },
-        ],
-      },
-    },
-  ],
+            }
+          }
+        ]
+      }
+    }
+  ]
 };

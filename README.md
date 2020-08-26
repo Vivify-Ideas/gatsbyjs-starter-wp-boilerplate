@@ -8,7 +8,7 @@
 
 4.  **Run `npm install`**
 
-5.  **Create `.env.development` file in the root of the folder**
+5.  **Create the new file `.env.development` with initial variables from `.env.example` in the root folder of the project. Do not copy or rename it, it could cause fetching problems for some reason.**
 
     Create these env variables:
 
@@ -20,7 +20,9 @@
 
 6.  **Make sure that your headless WP is running**
 
-7.  **Run `gatsby develop`**
+7.  **Prettier is available, use `.pretierrc` file to configure your editor**
+
+8.  **Run `gatsby develop`**
 
     Your site is now running at `http://localhost:8000`!
 
